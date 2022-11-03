@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>Quasar App</title><meta charset=utf-8><meta content="A Quasar Project" name=description><meta content="telephone=no" name=format-detection><meta content=no name=msapplication-tap-highlight><meta content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width" name=viewport><link href="favicon.ico" rel=icon type=image/ico><style media=screen type=text/css>.loader-main {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: whitesmoke;
+      z-index: 9999999;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      margin: 20% auto 40px;
+      position: relative;
+      z-index: 999999;
+      background-color: whitesmoke;
+    }
+
+    .loader:before {
+      content: "";
+      width: 50px;
+      height: 7px;
+      border-radius: 50%;
+      background: #000;
+      opacity: 0.1;
+      position: absolute;
+      top: 59px;
+      left: 0;
+      animation: shadow .5s linear infinite;
+    }
+
+    .loader:after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      border-radius: 3px;
+      background-color: #5FB878;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: loading .5s linear infinite;
+    }
+
+    @keyframes loading {
+      17% {
+        border-bottom-right-radius: 3px;
+      }
+
+      25% {
+        transform: translateY(9px) rotate(22.5deg);
+      }
+
+      50% {
+        transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+        border-bottom-right-radius: 40px;
+      }
+
+      75% {
+        transform: translateY(9px) rotate(67.5deg);
+      }
+
+      100% {
+        transform: translateY(0) rotate(90deg);
+      }
+    }
+
+    @keyframes shadow {
+      0%,
+      100% {
+        transform: scale(1, 1);
+      }
+
+      50% {
+        transform: scale(1.2, 1);
+      }
+    }</style>  <script type="module" crossorigin src="assets/index-1667361414950.js"></script>
+  <link rel="modulepreload" href="assets/@vue-1667361414950.js">
+  <link rel="modulepreload" href="assets/quasar-1667361414950.js">
+  <link rel="modulepreload" href="assets/vue-router-1667361414950.js">
+  <link rel="modulepreload" href="assets/@intlify-1667361414950.js">
+  <link rel="modulepreload" href="assets/__package-1667361414950.js">
+  <link rel="modulepreload" href="assets/zrender-1667361414950.js">
+  <link rel="modulepreload" href="assets/echarts-1667361414950.js">
+  <link rel="modulepreload" href="assets/__components-1667361414950.js">
+  <link rel="modulepreload" href="assets/axios-1667361414950.js">
+  <link rel="modulepreload" href="assets/__src-1667361414950.js">
+  <link rel="stylesheet" href="assets/quasar-1667361414950.css">
+  <link rel="stylesheet" href="assets/__src-1667361414950.css">
+  <link rel="stylesheet" href="assets/__components-1667361414950.css">
+  <link rel="stylesheet" href="assets/@quasar-1667361414950.css">
+</head><body><div id=appLoading class=loader-main><div class=loader></div></div><script>window.onload = function () {
+    const box = document.getElementById("appLoading")
+    box.remove()
+  }</script><div id=q-app></div><script charset=utf-8 src="static/IPConfig.js"></script></body></html>
